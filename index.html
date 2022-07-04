@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen doi tien te</title>
+</head>
+<body>
+
+<br> <br> _ _ _ _
+< <table style = " width: 500px " align = " center " >
+<tr>
+    <td> < b > Số lượng </ b > </tr></td>
+    <td> > < b > Từ Tiền tệ </ b > </td>
+<td> < b > Tiền tệ </ b > </td>
+<td> </td>
+
+</tr>
+<tr>
+<td> <input type = " text " id = " sotien " > </td>
+    <td>
+< <select  id = " from " >
+<option  value = " viet " > VND </ option >
+<option  value = " my " > USD </ option >
+    </select>
+    </td>
+<td>
+< <select id = " to " >
+< <option  value = " viet " > VND </ option >
+< <option  value = " my " > USD </ option >
+</select>
+</td>
+<td>
+< <button  onclick = " doitien () " > CHUYEN </ button >
+</td>
+</tr>
+
+</table> >
+
+
+<script>
+
+function  doitien ( )  {
+let  from  =  tài liệu . getElementById ( "từ" ) . giá trị ;
+let  to  =  tài liệu . getElementById ( "thành" ) . giá trị ;
+để  đầu vào  =  + tài liệu . getElementById ( "sotien" ) . giá trị ;
+
+if  ( from  ==  to )  {
+if  ( từ  ==  "VND" )  {
+tài liệu . write ( 'So tien chuyen la:'  +  input  +  'DOLLAR' )
+
+}  khác  {
+tài liệu . write ( 'So tien chuyen la:'  +  input  +  'VND' )
+
+}
+
+}  khác  {
+if  ( from  ==  "viet" )  {
+input  =  đầu vào  /  23000 ;
+tài liệu . write ( 'So tien chuyen la:'  +  input  +  'USD' )
+
+}  khác  {
+input  =  đầu vào  *  23000 ;
+tài liệu . write ( 'So tien chuyen la:'  +  input  +  'VND' )
+}
+}
+
+
+}
+
+</script >
+
+
+
+</body>
+</html>
